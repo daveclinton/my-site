@@ -4,7 +4,6 @@ import { Prose } from "@/components/Prose";
 import Link from "next/link";
 import ExperienceSection from "@/components/ExperienceSection";
 import { formatDate } from "@/lib/formatDate";
-import { Social } from "@/components/Social";
 
 const About: NextPage = () => {
   const date = "2023-09-08";
@@ -74,7 +73,10 @@ const About: NextPage = () => {
               <li>
                 Completed six well-documented projects, demonstrating strong
                 organisational skills and attention to detail. Read all articles
-                <Link href=""> here</Link>
+                <Link href="" className=" not-prose text-regal-yellow">
+                  {" "}
+                  here
+                </Link>
               </li>
             </ul>
           </ExperienceSection>

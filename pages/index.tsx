@@ -5,7 +5,6 @@ import { MDXFrontMatter } from "@/lib/types";
 import { Page } from "@/components/Page";
 import { PostList } from "@/components/PostList";
 import { ArrowRight } from "react-feather";
-import { Social } from "@/components/Social";
 
 interface HomeProps {
   posts: Array<MDXFrontMatter>;
@@ -23,6 +22,13 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
               Welcome to my digital garden where I write about many things,
               including, but not limited to React, Typescript, Javascript,
               Chakra UI, many more web dev related topics.
+            </p>
+            <p>
+              Learn more about my professional experience in my
+              <Link className=" not-prose text-regal-yellow" href="/about">
+                {` About `}
+              </Link>
+              section
             </p>
           </>
         }
