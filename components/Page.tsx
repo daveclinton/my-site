@@ -14,6 +14,7 @@ interface PageProps {
   thumbnail?: string;
   children?: React.ReactNode;
   heading?: string | React.ReactNode;
+  socialDisplay?: string;
 }
 
 export const Page: React.FC<PageProps> = ({
@@ -24,6 +25,7 @@ export const Page: React.FC<PageProps> = ({
   children,
   lastUpdated,
   heading,
+  socialDisplay,
 }) => {
   const metaTitle = onlyText(title);
   const metaDescription = description
@@ -74,7 +76,7 @@ export const Page: React.FC<PageProps> = ({
             </Prose>
           </div>
         ) : null}
-        <div className="flex items-center">
+        <div className={`flex items-center ${socialDisplay}`}>
           <h1 className="font-bold text-lg text">Social Links:</h1>
           <Social />
         </div>

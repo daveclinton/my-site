@@ -25,7 +25,7 @@ interface PostProps {
 const Post: NextPage<PostProps> = ({ frontMatter, mdx, previous, next }) => {
   return (
     <>
-      <Page {...frontMatter}>
+      <Page socialDisplay="hidden" {...frontMatter}>
         <Prose>
           <MDXRemote {...mdx} components={components} />
         </Prose>
