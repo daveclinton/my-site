@@ -13,7 +13,7 @@ const SOCIAL_ICONS: { [key: string]: React.ReactNode } = {
 
 export const Social: React.FC = () => {
   return (
-    <footer>
+    <footer className="ml-8 mt-4">
       {siteConfig.social ? (
         <ul className="flex list-none space-x-4">
           {Object.entries(siteConfig.social).map(([key, href]) => {

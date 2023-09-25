@@ -11,9 +11,6 @@ import { useTheme } from "next-themes";
 export const Header: React.FC = () => {
   const { pathname } = useRouter();
   const { theme: activeTheme, themes, setTheme } = useTheme();
-  const toggleTheme = () => {
-    setTheme(activeTheme === "dark" ? "light" : "dark");
-  };
 
   const bgColor = activeTheme === "light" ? "#f9fafb" : "#111827";
   const [isMobileMenu, setIsMobileMenu] = useState(false);
@@ -27,6 +24,10 @@ export const Header: React.FC = () => {
     textAlign: "center",
     backgroundColor: `${bgColor}`,
     padding: "1rem 0",
+  };
+  const toggleTheme = () => {
+    setTheme(activeTheme === "dark" ? "light" : "dark");
+    setIsMobileMenu(false);
   };
 
   return (

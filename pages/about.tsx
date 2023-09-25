@@ -4,6 +4,7 @@ import { Prose } from "@/components/Prose";
 import Link from "next/link";
 import ExperienceSection from "@/components/ExperienceSection";
 import { formatDate } from "@/lib/formatDate";
+import { Social } from "@/components/Social";
 
 const About: NextPage = () => {
   const date = "2023-09-08";
@@ -25,6 +26,7 @@ const About: NextPage = () => {
             digital. I now work in the Asset Financing space but am not
             restricted to it by any means.
           </p>
+
           <ExperienceSection
             title="Frontend Engineer - Untapped Global"
             period="June 2022 - Present"
@@ -55,7 +57,7 @@ const About: NextPage = () => {
           </ExperienceSection>
           <ExperienceSection
             title="Software Engineer - Paperspace"
-            period="June 2020 - May 2022"
+            period="June 2021 - May 2022"
           >
             <ul className="list-disc">
               <li>
@@ -77,25 +79,24 @@ const About: NextPage = () => {
             </ul>
           </ExperienceSection>
           <ExperienceSection
-            title="FullStack Software Engineer - Dylans Ways Limited"
-            period=" June 2020 - May 2022"
+            title="Junior FullStack Software Engineer - Dylans Ways Limited"
+            period="Aug 2020 - May 2021"
           >
             <ul className="list-disc">
               <li>
-                Played a key role in developing and documenting deep learning
-                projects, providing valuable technical expertise and producing
-                concise and accessible documentation for developers and
-                researchers.
+                Successfully integrated an extensive array of third-party
+                services and components, including payment gateways,
+                geo-location services, and social media login functionality.
               </li>
               <li>
-                Authored a featured project and article for the company blog,
-                showcasing technical expertise and thought leadership. Check
-                articles
+                Developed web-based content management systems (CMS) to
+                streamline content management, leading to faster updates for
+                website information and features.
               </li>
               <li>
-                Completed six well-documented projects, demonstrating strong
-                organisational skills and attention to detail. Read all articles
-                <Link href=""> here</Link>
+                Oversaw system health, diagnosed performance issues, and
+                enhanced application performance through a combination of
+                server-side and client-side optimization methods.
               </li>
             </ul>
           </ExperienceSection>

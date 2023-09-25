@@ -24,10 +24,6 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
               including, but not limited to React, Typescript, Javascript,
               Chakra UI, many more web dev related topics.
             </p>
-            <div className="flex items-center">
-              <h1 className="font-bold text-lg text">Social Links:</h1>
-              <Social />
-            </div>
           </>
         }
       >

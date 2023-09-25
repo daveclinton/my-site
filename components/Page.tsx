@@ -4,6 +4,7 @@ import { formatDate } from "@/lib/formatDate";
 import siteConfig from "@/data/siteConfig";
 import { Prose } from "@/components/Prose";
 import { cx } from "@/lib/utils";
+import { Social } from "./Social";
 
 interface PageProps {
   date?: string;
@@ -73,6 +74,10 @@ export const Page: React.FC<PageProps> = ({
             </Prose>
           </div>
         ) : null}
+        <div className="flex items-center">
+          <h1 className="font-bold text-lg text">Social Links:</h1>
+          <Social />
+        </div>
       </header>
       {children}
     </>
