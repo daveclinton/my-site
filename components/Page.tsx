@@ -9,7 +9,7 @@ import { Social } from "./Social";
 interface PageProps {
   date?: string;
   lastUpdated?: string | React.ReactNode;
-  title: string | React.ReactNode;
+  title?: string | React.ReactNode;
   description?: string | React.ReactNode;
   thumbnail?: string;
   children?: React.ReactNode;
@@ -65,6 +65,7 @@ export const Page: React.FC<PageProps> = ({
           {heading}
         </h1>
         <h6 className="mt-2 opacity-50">{lastUpdated}</h6>
+        <h1 className="font-bold text-3xl">{title}</h1>
         {description ? (
           <div className="mt-4">
             <Prose>

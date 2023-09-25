@@ -14,7 +14,6 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
   return (
     <>
       <Page
-        title="Its David"
         heading="Hey there, I'm David Clinton"
         description={
           <>

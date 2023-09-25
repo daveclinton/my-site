@@ -10,7 +10,6 @@ const About: NextPage = () => {
   return (
     <>
       <Page
-        title="About"
         lastUpdated={`LAST UPDATED: ${formatDate(date)}`}
         description="I’m a Frontend Engineer working with companies to build impactful Web applications and Native applications that prioritize responsive interactions with users "
         heading="Hi, I'm David"

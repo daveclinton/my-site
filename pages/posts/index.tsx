@@ -9,11 +9,12 @@ interface PostsProps {
 }
 
 const Posts: NextPage<PostsProps> = ({ posts }) => {
+  console.log(posts);
   return (
     <>
       <Page
-        title="Posts"
-        description={`I have written a total of ${posts.length} posts`}
+        heading="All Articles"
+        description={`I have written a total of ${posts.length} articles`}
       >
         <PostList posts={posts} />
       </Page>
